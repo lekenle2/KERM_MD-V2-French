@@ -35,7 +35,7 @@ smd({
     var _0x370694 = ("*LISTE DES UTILISATEURS ACTIFS DANS LE CHAT ACTUEL*\n_Remarque : Parfois, les données seront réinitialisées lors du redémarrage du bot ! _\n\n*Nombre total d'utilisateurs : _" + _0x599777.length + "_*\n\n*Nom d'utilisateur ➪ NOMBRE DE MESSAGES(s)*\n" + _0x338160 + "\n\n" + Config.caption).trim();
     await _0x1cec94.send(_0x370694, {
       contextInfo: {
-        ...(await _0x1cec94.bot.contextInfo("ACTIVE USERS", _0x1cec94.senderName))
+        ...(await _0x1cec94.bot.contextInfo("UTILISATEURS ACTIFS", _0x1cec94.senderName))
       }
     }, "asta", _0x1cec94);
   } catch (_0x225db9) {
@@ -59,7 +59,7 @@ smd({
       });
     }
   } catch (_0x4bf40a) {
-    await _0x297aaa.error(_0x4bf40a + "\n\ncommand : listmessage", _0x4bf40a, "*ERROR!*");
+    await _0x297aaa.error(_0x4bf40a + "\n\ncommand : listmessage", _0x4bf40a, "*ERREUR!*");
   }
 });
 smd({
