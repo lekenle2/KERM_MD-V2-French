@@ -28,14 +28,14 @@ smd(
   async (message) => {
     try {
       let menuMessage = ` 
-➮ʀᴜɴᴛɪᴍᴇ - ${runtime(process.uptime())} 
+➮Dᴜʀᴇ́ᴇ ᴅ,ᴇxᴇ́ᴄᴜᴛɪᴏɴ - ${runtime(process.uptime())} 
 ➮ᴅᴀᴛᴇ - ${message.date} 
-➮ɴᴏᴡ ᴛɪᴍᴇ - ${message.time} 
-➮Fᴏᴜɴᴅᴇʀ- *Kg Tech*
-➮Oᴡɴᴇʀ - ${Config.ownername} 
-➮Nᴜᴍ - ${owner.split(",")[0]} 
+➮L’ʜᴇᴜʀᴇ ᴀᴄᴛᴜᴇʟʟᴇ - ${message.time} 
+➮Fᴏɴᴅᴀᴛᴇᴜʀ- *Kg Tech*
+➮Pʀᴏᴘʀɪᴇ́ᴛᴀɪʀᴇ - ${Config.ownername} 
+➮ɴᴜᴍ - ${owner.split(",")[0]} 
 ➮Mᴇᴍᴏ - ${formatp(os.totalmem() - os.freemem())} 
-      \n *KERM_MD-V2 SIMPLE WHATSAPP BOT*\n\n ${readmore} 
+      \n *KERM_MD-V2-French ROBOT WHATSAPP SIMPLE*\n\n ${readmore} 
 ╭──❰༆𝐀𝐥𝐥 𝐌𝐞𝐧𝐮༆❱ 
 │🤖 Lɪꜱᴛ 
 │🤖 Cᴀᴛᴇɢᴏʀʏ 
@@ -66,7 +66,7 @@ astro_patch.cmd(
     try {
       if (!query) {
         return await message.send(
-          "*_Please provide cmd name by replying a Sticker bro_*"
+          "*_Veuillez fournir le nom cmd en répondant à un autocollant bro_*"
         );
       }
 
@@ -88,19 +88,19 @@ astro_patch.cmd(
         newCommand = queryParts[1].trim().toLowerCase();
       } else if (!isSticker) {
         return await message.send(
-          "*_Uhh Dear, Give Cmd With New Name_*\n*Eg: _.setcmd New_Name, Cmd_Name_*"
+          "*_Euhh chéri, Donne Cmd Avec Un Nouveau Nom_*\n*Eg : _.setcmd New_Name, Cmd_Name_*"
         );
       }
 
       if (newCommand.length < 1) {
         return await message.reply(
-          "*_Uhh Please, Provide New_Cmd Name First_*"
+          "*_Euh S'Il Vous Plaît, Fournissez D'Abord Le Nom New_Cmd_*"
         );
       }
 
       if (global.setCmdAlias[newCommand]) {
         return await message.send(
-          `*_"${isSticker ? "Given Sticker" : newCommand}" Already set for "${
+          `*_"${isSticker ? "Given Sticker" : newCommand}" Déjà prêt pour "${
             global.setCmdAlias[newCommand]
           }" Cmd, Please try another ${isSticker ? "Sticker" : "Name"}_*`
         );
@@ -115,13 +115,13 @@ astro_patch.cmd(
       if (foundCommand) {
         global.setCmdAlias[newCommand] = foundCommand.pattern;
         return await message.send(
-          `*_Cmd "${global.setCmdAlias[newCommand]}" Successfully set to "${
+          `*_Cmd "${global.setCmdAlias[newCommand]}" Réglé avec succès sur "${
             isSticker ? "Sticker" : newCommand
-          }"._*\n*_These all names are reset if the bot restarts_*`
+          }"._*\n*_Tous ces noms sont réinitialisés si le bot redémarre_*`
         );
       } else {
         return await message.send(
-          `*_Provided Cmd (${originalCommand}) not found in bot commands. Please provide a valid command name_*`
+          `*_La Cmd (${originalCommand}) Non trouvé dans les commandes du bot. Veuillez fournir un nom de commande valide_*`
         );
       }
     } catch (error) {
@@ -150,12 +150,12 @@ astro_patch.cmd(
           commandName = "sticker-" + message.quoted.msg.fileSha256;
         } else if (!query) {
           return await message.send(
-            "*_Please reply to a Sticker that was set for a command bro_*"
+            "*_Veuillez répondre à un autocollant qui a été défini pour une commande bro_*"
           );
         }
       } else if (!query) {
         return await message.send(
-          "*_Uhh Dear, provide the name that was set for a command_*\n*Eg: _.delcmd Cmd_Name_*"
+          "*_Euhh cher, fournissez le nom qui a été défini pour une commande_*\n*Eg : _.delcmd Cmd_Name_*"
         );
       }
 
@@ -163,7 +163,7 @@ astro_patch.cmd(
         await message.send(
           `*_"${
             isSticker ? "Given Sticker" : commandName
-          }" deleted successfully for "${
+          }" Supprimé avec succès pour "${
             global.setCmdAlias[commandName]
           }" command_*`
         );
@@ -173,7 +173,7 @@ astro_patch.cmd(
         return await message.send(
           `*_"${
             isSticker ? "Given Sticker" : commandName
-          }" is not set for any command._*\n *_Please provide a valid ${
+          }" N'est défini pour aucune commande._*\n *_Veuillez fournir un valide ${
             isSticker ? "Sticker" : "command name"
           } to delete_*`
         );
@@ -221,7 +221,7 @@ astro_patch.cmd(
   async (message) => {
     try {
       message.reply(
-        `*_Uptime of KERM_MD-v2: ${runtime(process.uptime())}_*`
+        `*_Disponibilité de KERM_MD-V2-French: ${runtime(process.uptime())}_*`
       );
     } catch (error) {
       await message.error(error + "\n\ncommand : uptime", error, false);
@@ -243,10 +243,10 @@ astro_patch.cmd(
       let listMessage = `\n  
 ╭━━〘 * ${Config.botname} * 〙    
 ┃ 🎗 Prefix: ${Config.HANDLERS}
-┃ 🎗 Owner: ${Config.ownername}
-┃ 🎗 Commands: ${commands.length}
+┃ 🎗 Proprio: ${Config.ownername}
+┃ 🎗 Commandes: ${commands.length}
 ┃ 🎗 Uptime: ${runtime(process.uptime())}
-┃ 🎗 Mem: ${formatp(os.totalmem() - os.freemem())}
+┃ 🎗 Memoire: ${formatp(os.totalmem() - os.freemem())}
 ╰━━━━━━━━━━━━━━⊷\n`;
 
       for (let i = 0; i < commands.length; i++) {
@@ -269,7 +269,7 @@ astro_patch.cmd(
 // Command: Owner
 astro_patch.smd(
   {
-    pattern: "owner",
+    pattern: "proprio",
     desc: "To display owner information",
     category: "owner",
     filename: __filename,
@@ -345,7 +345,7 @@ astro_patch.cmd(
 
       if (!textToTranslate) {
         return await message.reply(
-          `*Please provide the text to translate. Example: ${prefix}trt en Who are you*`
+          `*Veuillez fournir le texte à traduire. Exemple : ${prefix}trt en Qui êtes-vous ?*`
         );
       }
 
