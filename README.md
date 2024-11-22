@@ -37,19 +37,19 @@
 <a href='https://github.com/Kgtech-cmr/KERM_MD-V2-French/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/FORK CE RÉFÉRENTIEL-black?style=for-the-badge&logo=git&logoColor=white'/></a>
 <p align="center">
 
-#### 𝐒𝐄𝐓𝐔𝐏
+#### INSTALLATION
 
 
-1.𝐆𝐄𝐓 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐈𝐃 𝐅𝐑𝐎𝐌 𝐒𝐄𝐑𝐕𝐄𝐑
+1. OBTENIR L'ID DE SESSION DU SERVEUR
 
 <a href="https://kgtech-v2-session.onrender.com/pair"><img src="https://img.shields.io/badge/PAIR_CODE-blue" alt="Click Here to Get Pair-Code" width="110"></a>   
 
 <a href="https://kgtech-v2-session.onrender.com/wasiqr"><img src="https://img.shields.io/badge/QR CODE-green" alt="Click Here to Get QR-Code" width="90"></a> 
 
-## How To Deploy On Github.
+## Comment déployer sur Github.
 * [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/T77rQM7Nk5k?si=gg-LJxS6vC6kBEpJ)
 
-• Create a new file [`.github/workflows/deploye.yml`] After created, copy this code👇🏽and paste it there
+• Créer un nouveau fichier [`.github/workflows/deploye.yml`] Après avoir créé, copiez ce code👇🏽et collez-le dans le nouveau fichier
 ```yml
 name: Node.js CI
 
@@ -95,58 +95,58 @@ jobs:
       run: |
         ./save_state.sh
 ```
-#### DEPLOY TO HEROKU 
+#### DÉPLOYER SUR HEROKU
 
-1. If You don't have a account in Heroku. Create a account.
+1. Si vous n'avez pas de compte sur Heroku. Créez un compte.
     <br>
 <a href='https://heroku.com' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku'/></a>
    <br>
-2. Now Deploy
+2. Maintenant déployez
     <br>
-<a href='https://heroku.com/deploy?template=https://github.com/Kgtech-cmr/KERM_MD-V2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku'/></a>
+<a href='https://heroku.com/deploy?template=https://github.com/Kgtech-cmr/KERM_MD-V2-French' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku'/></a>
 
-#### DEPLOY TO KOYEB 
+#### DÉPLOYER SUR KOYEB 
 
-1. If You don't have a account in koyeb. Create a account.
+1. Si vous n'avez pas de compte sur koyeb. Créez un compte.
     <br>
 <a href='https://app.koyeb.com/auth/signup' target="_blank"><img alt='koyeb' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=koyeb'/></a>
 
-2. Get [Koyeb api key](https://app.koyeb.com/account/api)
+2. Obtenir [Koyeb api key](https://app.koyeb.com/account/api)
 
-4. Now Deploy
+4. Maintenant déployez 
     <br>
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=https://github.com/Kgtech-cmr/KERM_MD-V2&branch=main&name=xbotmd&builder=dockerfile&env[SESSION_ID]=%20&env[WORK_TYPE]=private&env[HANDLER]=.&env[BOT_INFO]=KERM_MD-V2;ASWIN%20SPARKY;https://i.imgur.com/QH7T7u9.jpeg&env[SUDO]=237656520674,237650564445&env[STICKER_DATA]=KG TECH&env[DATABASE_URL]' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb'/></a>
+<a href='https://app.koyeb.com/services/deploy?type=git&repository=https://github.com/Kgtech-cmr/KERM_MD-V2-French&branch=main&name=xbotmd&builder=dockerfile&env[SESSION_ID]=%20&env[WORK_TYPE]=private&env[HANDLER]=.&env[BOT_INFO]=KERM_MD-V2;ASWIN%20SPARKY;https://i.imgur.com/QH7T7u9.jpeg&env[SUDO]=237656520674,237650564445&env[STICKER_DATA]=KG TECH&env[DATABASE_URL]' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb'/></a>
 
-#### DEPLOY ON RAILWAY
+#### DÉPLOYEZ SUR RAILWAY
 
-1. If You don't have a account in Railway. Create a account.
+1. Si vous n'avez pas de compte Railway. Créez un compte.
     <br>
 <a href='https://railway.app' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=railway'/>
-2. Now Deploy
+2. Maintenant Déployez
     <br>
 <a href='https://railway.app' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=railway'/></a>
 
-#### DEPLOY ON MOGENIUS
+#### DÉPLOYEZ SUR MOGENIUS
 
-1. If You don't have a account in Replit. Create a account.
+1. Si vous n'avez pas de compte Mogenius. Créez un compte.
     <br>
 <a href='https://mogenius.com' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=genius'/></a>
-2. Now Deploy
+2. Maintenant Déployez
     <br>
 <a href='https://mogenius.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=genius'/></a>
 
-  **Do not forget to give a star⭐️ please**
+  **N'oubliez pas de donner une étoile ⭐️ s'il vous plaît**
 
-### A special thank to
+### Un merci spécial à
 
 <details close>
-<summary>Read More</summary>
+<summary>En savoir plus</summary>
 
 <br>
 
 * [`ARTHUR SASAKI`](https://github.com/Alp24ni)
 * ## Contact Dev of KERM🤪
-* [`RAYAN`](https://wa.me/237656520674?text=Hi+Bro+Rayan+Big+Fan😍)
-* [`GIFFARENO`](https://wa.me/237650564445?text=Hi+Bro+Giffareno+Big+Fan😍)
+* [`RAYAN`](https://wa.me/237656520674?text=Salut+Bro+Rayan+Je+Suis+Un+Fan😍)
+* [`GIFFARENO`](https://wa.me/237650564445?text=Salut+Bro+Giffareno+Je+Suis+Un+Fan😍)
  </details>
  
