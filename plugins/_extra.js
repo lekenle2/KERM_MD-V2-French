@@ -29,10 +29,10 @@ smd({
     });
     let _0x599777 = Object.entries(_0x5af784);
     if (!_0x599777 || !_0x599777[0]) {
-      return await _0x1cec94.reply("_No messages found!_");
+      return await _0x1cec94.reply("_Aucun message trouvé !_");
     }
     const _0x338160 = Object.entries(_0x5af784).map(([_0x4630e3, _0x3a7f93]) => "\t*" + (_0x4630e3?.split("\n").join(" ") || "unknown") + "*  ➪  _" + _0x3a7f93 + "_").join("\n");
-    var _0x370694 = ("*LIST OF ACTIVE USERS IN CURRENT CHAT*\n_Note: Sometimes Data will be reset when bot restart!_\n\n*Total Users: _" + _0x599777.length + "_*\n\n*USERNAME ➪ MESSAGE COUNT(s)*\n" + _0x338160 + "\n\n" + Config.caption).trim();
+    var _0x370694 = ("*LISTE DES UTILISATEURS ACTIFS DANS LE CHAT ACTUEL*\n_Remarque : Parfois, les données seront réinitialisées lors du redémarrage du bot ! _\n\n*Nombre total d'utilisateurs : _" + _0x599777.length + "_*\n\n*Nom d'utilisateur ➪ NOMBRE DE MESSAGES(s)*\n" + _0x338160 + "\n\n" + Config.caption).trim();
     await _0x1cec94.send(_0x370694, {
       contextInfo: {
         ...(await _0x1cec94.bot.contextInfo("ACTIVE USERS", _0x1cec94.senderName))
@@ -71,7 +71,7 @@ smd({
 }, async (_0xcc3d0b, _0x718ae9) => {
   try {
     if (!_0xcc3d0b.reply_message || !_0x718ae9) {
-      return await _0xcc3d0b.reply(!_0xcc3d0b.reply_message ? "*_Please reply to message with caption | filname_*" : "*Please provide text to set caption!*");
+      return await _0xcc3d0b.reply(!_0xcc3d0b.reply_message ? "*_Veuillez répondre au message avec la légende | filname_*" : "*Veuillez fournir du texte pour définir la légende !*");
     }
     if (_0xcc3d0b.reply_message.image || _0xcc3d0b.reply_message.video || _0xcc3d0b.reply_message.mtype.includes("document")) {
       let _0x4e09a5 = "" + _0x718ae9.split("|")[1]?.trim() || "null";
@@ -80,7 +80,7 @@ smd({
       _0xcc3d0b.reply_message.message[_0xcc3d0b.reply_message.mtype].fileName = _0x4e09a5;
       await _0xcc3d0b.bot.copyNForward(_0xcc3d0b.chat, _0xcc3d0b.reply_message);
     } else {
-      return await _0xcc3d0b.reply("please reply to an Audio/Video/document message");
+      return await _0xcc3d0b.reply("Veuillez répondre à un message audio/vidéo/document");
     }
   } catch (_0x5ab188) {
     await _0xcc3d0b.error(_0x5ab188 + "\n\ncommand : caption", _0x5ab188, false);
@@ -97,10 +97,10 @@ smd({
   try {
     let _0x49db20 = _0x7587f6.image || _0x7587f6.video ? _0x7587f6 : _0x7587f6.reply_message && (_0x7587f6.reply_message.image || _0x7587f6.reply_message.video) ? _0x7587f6.reply_message : false;
     if (!_0x49db20) {
-      return await _0x7587f6.reply("_Reply to an image/video message!_");
+      return await _0x7587f6.reply("_Répondre à un message image/vidéo!_");
     }
     if (!_0x11eeb1) {
-      return await _0x7587f6.reply("_Need fileName, Example: document asta | caption_");
+      return await _0x7587f6.reply("_Besoin de fileName, Exemple : document kerm | légende_");
     }
     let _0x1bfcf5 = await _0x7587f6.bot.downloadAndSaveMediaMessage(_0x49db20);
     let _0x3f6d77 = _0x11eeb1.includes(":") ? ":" : _0x11eeb1.includes(";") ? ";" : "|";
@@ -117,7 +117,7 @@ smd({
         caption: _0x3367ca
       });
     } else {
-      _0x7587f6.reply("*Request Denied!*");
+      _0x7587f6.reply("*Demande Reniée!*");
     }
   } catch (_0x408490) {
     await _0x7587f6.error(_0x408490 + "\n\ncommand : document", _0x408490, false);
@@ -133,7 +133,7 @@ smd({
   try {
     let _0x1d26ad = _0x241c6f.image || _0x241c6f.video ? _0x241c6f : _0x241c6f.reply_message && (_0x241c6f.reply_message.image || _0x241c6f.reply_message.video) ? _0x241c6f.reply_message : false;
     if (!_0x1d26ad) {
-      return await _0x241c6f.reply("_Reply to image/video with caption!_");
+      return await _0x241c6f.reply("_Répondre à l'image/vidéo avec légende!_");
     }
     let _0x60cca4 = await _0x241c6f.bot.downloadAndSaveMediaMessage(_0x1d26ad);
     let _0x8cde12 = _0x1d26ad.image ? "image" : "video";
@@ -150,7 +150,7 @@ smd({
         quoted: _0x1d26ad
       });
     } else {
-      _0x241c6f.reply("*Request Denied!*");
+      _0x241c6f.reply("*Demande Reniée!*");
     }
   } catch (_0x2422e7) {
     await _0x241c6f.error(_0x2422e7 + "\n\ncommand : tovv", _0x2422e7, false);
@@ -160,7 +160,7 @@ smd({
   cmdname: "feature",
   alias: ["totalfeature", "features", "kerm2"],
   category: "tools",
-  react: ['⏳,⌛️'],
+  react: ['⏳'],
   filename: __filename,
   info: "get counting for total features!"
 }, async _0x4e7c63 => {
@@ -218,7 +218,7 @@ smd({
 }, async _0x2a677e => {
   const _0x32c078 = _0x2a677e.reply_message ? _0x2a677e.reply_message.sender : _0x2a677e.mentionedJid && _0x2a677e.mentionedJid[0] ? _0x2a677e.mentionedJid[0] : "";
   if (!_0x32c078 || !_0x32c078.includes("@")) {
-    return await _0x2a677e.reply("*Mention/reply user to check its character!*");
+    return await _0x2a677e.reply("*Mentionner/répondre à l'utilisateur pour vérifier son caractère!*");
   }
   const _0x5845d4 = ["Sigma", "Generous", "Grumpy", "Overconfident", "Obedient", "Good", "Simple", "Kind", "Patient", "Pervert", "Cool", "Helpful", "Brilliant", "Sexy", "Hot", "Gorgeous", "Cute", "Fabolous", "Funny"];
   const _0x2f5d93 = _0x5845d4[Math.floor(Math.random() * _0x5845d4.length)];
@@ -238,7 +238,7 @@ smd({
     let {
       result: _0x1aa994
     } = await _0x45fa91.json();
-    _0x4d032f.reply(_0x45fa91 && _0x1aa994 ? _0x1aa994 : "_Request Denied from Server!_");
+    _0x4d032f.reply(_0x45fa91 && _0x1aa994 ? _0x1aa994 : "_Demande reniée par le serveur !_");
   } catch (_0x303ba6) {
     await _0x4d032f.error(_0x303ba6 + "\n\ncommand : poetry", _0x303ba6, false);
   }
@@ -252,7 +252,7 @@ smd({
 }, async (_0xe6d6e, _0x23f786) => {
   try {
     if (!_0x23f786) {
-      return await _0xe6d6e.reply("Hi *" + _0xe6d6e.senderName + "*, do you want to talk?");
+      return await _0xe6d6e.reply("Salut *" + _0xe6d6e.senderName + "*, Veux-tu parler ?");
     }
     const _0x55bb61 = {
       method: "POST",
@@ -266,7 +266,7 @@ smd({
     if (_0x2c3e12.status === "200" && _0x2c3e12.message) {
       _0xe6d6e.reply(_0x2c3e12.message);
     } else {
-      _0xe6d6e.reply("*No Responce!*");
+      _0xe6d6e.reply("*Pas de réponse !*");
     }
   } catch (_0xfee6e3) {
     await _0xe6d6e.error(_0xfee6e3 + "\n\ncommand : poetry", _0xfee6e3, false);
@@ -326,7 +326,7 @@ smd({
     let {
       data: _0x58d504
     } = await axios.get("https://api.ipify.org/");
-    _0x446c27.send(_0x58d504 ? "*Bot's IP address is : _" + _0x58d504 + "_*" : "_No responce from server!_");
+    _0x446c27.send(_0x58d504 ? "*L'adresse IP du bot est : _" + _0x58d504 + "_*" : "_Aucune réponse du serveur !_");
   } catch (_0x2976b7) {
     await _0x446c27.error(_0x2976b7 + "\n\ncommand : myip", _0x2976b7, false);
   }
@@ -382,7 +382,7 @@ smd({
   try {
     let _0x587b99 = _0x41dfb5.split(" ")[0].trim();
     if (!_0x587b99) {
-      return await _0x4cdec8.reply("*Need URL! Use " + prefix + "ss https://github.com/Kermhack/KERM_MD-v2*");
+      return await _0x4cdec8.reply("*Besoin d'URL ! Utiliser " + prefix + "ss https://github.com/Kermhack/KERM_MD-V2-French*");
     }
     let _0x358290 = await ssweb(_0x587b99);
     if (_0x358290 && _0x358290.status == "200") {
@@ -390,10 +390,10 @@ smd({
         caption: Config.caption
       }, "smdimg", _0x4cdec8);
     } else {
-      _0x4cdec8.send("_No responce from server!_");
+      _0x4cdec8.send("_Aucune réponse du serveur !_");
     }
   } catch (_0x126b07) {
-    await _0x4cdec8.error(_0x126b07 + "\n\ncommand : myip", _0x126b07, "*Request Denied!*");
+    await _0x4cdec8.error(_0x126b07 + "\n\ncommand : myip", _0x126b07, "*Demande reniée !*");
   }
 });
 let tmpUrl = "https://telegra.ph/file/b8e96b599e0fa54d25940.jpg";
@@ -408,7 +408,7 @@ smd({
     if (!secmailData[_0x10eae6.sender]) {
       const _0x5b6408 = await tempmail.create();
       if (!_0x5b6408 || !_0x5b6408[0]) {
-        return await _0x10eae6.reply("*Request Denied!*");
+        return await _0x10eae6.reply("*Demande reniée !*");
       }
       const _0x17929d = _0x5b6408[0].split("@");
       secmailData[_0x10eae6.sender] = {
@@ -421,7 +421,7 @@ smd({
     try {
       _0x54710d = await smdBuffer(tmpUrl);
     } catch (_0x40985f) {}
-    await _0x10eae6.reply(("*YOUR TEMPMAIL INFO*\n      \n      \n  *EMAIL:* ➪ " + secmailData[_0x10eae6.sender].email + "\n  *Login:* ➪ " + secmailData[_0x10eae6.sender].login + "\n  *Domain:* ➪ " + secmailData[_0x10eae6.sender].domain + "\n  \n  \n  *USE _" + prefix + "checkmail_ to get latest emails!*\n  *USE _" + prefix + "delmail_ to delete current email!*\n  \n  " + Config.caption + "\n  ").trim(), {
+    await _0x10eae6.reply(("*VOS INFORMATIONS DE TEMPMAIL*\n      \n      \n  *EMAIL:* ➪ " + secmailData[_0x10eae6.sender].email + "\n  *Login:* ➪ " + secmailData[_0x10eae6.sender].login + "\n  *Domaine:* ➪ " + secmailData[_0x10eae6.sender].domain + "\n  \n  \n  *Utiliser _" + prefix + "checkmail_ Pour recevoir les derniers e-mails!*\n  *Utiliser _" + prefix + "delmail_ Pour supprimer l'e-mail actuel !*\n  \n  " + Config.caption + "\n  ").trim(), {
       contextInfo: {
         ...(await _0x10eae6.bot.contextInfo("TEMPMAIL", _0x10eae6.senderName, _0x54710d))
       }
@@ -441,11 +441,11 @@ smd({
     const _0x13bdf9 = _0x39080b.sender;
     const _0x1ca6eb = secmailData[_0x13bdf9];
     if (!_0x1ca6eb || !_0x1ca6eb.email) {
-      return await _0x39080b.reply("*You haven't created a temporary email.*\n  *Use _" + prefix + "tempmail_ to create email first!*");
+      return await _0x39080b.reply("*Vous n'avez pas créé d'e-mail temporaire.*\n  *Use _" + prefix + "tempmail_ Pour créer d'abord un e-mail!*");
     }
     const _0xb59e7d = await tempmail.mails(_0x1ca6eb.login, _0x1ca6eb.domain);
     if (!_0xb59e7d || !_0xb59e7d[0] || _0xb59e7d.length === 0) {
-      return await _0x39080b.reply("*EMPTY  ➪ No mails received yet!* \n*Use _" + prefix + "delmail_ to delete mail!*");
+      return await _0x39080b.reply("*Vide  ➪ Aucun courrier reçu pour l'instant!* \n*Utiliser _" + prefix + "delmail_ Pour supprimer le courrier !*");
     }
     var _0x392c45 = false;
     try {
@@ -457,7 +457,7 @@ smd({
         emailContent: _0x587f7f
       });
       if (_0x587f7f) {
-        const _0xa4d211 = "\n  *From* ➪ " + _0x2b6dd0.from + "\n  *Date* ➪  " + _0x2b6dd0.date + "\n  *EMAIL ID* ➪  [" + _0x2b6dd0.id + "]\n  *Subject* ➪  " + _0x2b6dd0.subject + "\n  *Content* ➪  " + _0x587f7f;
+        const _0xa4d211 = "\n  *D'après* ➪ " + _0x2b6dd0.from + "\n  *Date* ➪  " + _0x2b6dd0.date + "\n  *IDENTIFIANT E-MAIL* ➪  [" + _0x2b6dd0.id + "]\n  *Subject* ➪  " + _0x2b6dd0.subject + "\n  *Content* ➪  " + _0x587f7f;
         await _0x39080b.reply(_0xa4d211, {
           contextInfo: {
             ...(await _0x39080b.bot.contextInfo("*EMAIL ➪ " + _0x2b6dd0.id + "*", _0x39080b.senderName, _0x392c45))
@@ -468,7 +468,7 @@ smd({
     }
   } catch (_0x4473c8) {
     console.log(_0x4473c8);
-    await _0x39080b.reply("*Request Denied!*");
+    await _0x39080b.reply("*Demande reniée !*");
   }
 });
 smd({
@@ -481,13 +481,13 @@ smd({
     const _0x35c5db = _0x536927.sender;
     if (secmailData[_0x35c5db]) {
       delete secmailData[_0x35c5db];
-      await _0x536927.reply("*Successfully deleted the email address.*");
+      await _0x536927.reply("*A supprimé l'adresse e-mail avec succès.*");
     } else {
-      await _0x536927.reply("*No email address to delete.*");
+      await _0x536927.reply("*Aucune adresse e-mail à supprimer.*");
     }
   } catch (_0x527b01) {
     console.log(_0x527b01);
-    await _0x536927.reply("*Request Denied!*");
+    await _0x536927.reply("*Demande Reniée!*");
   }
 });
 const tempmail = {};
@@ -496,7 +496,7 @@ tempmail.create = async () => {
   try {
     let _0x64d3a = await fetch(_0x4b8b0a);
     if (!_0x64d3a.ok) {
-      throw new Error("HTTP error! status: " + _0x64d3a.status);
+      throw new Error("HTTP erreur! status: " + _0x64d3a.status);
     }
     let _0x3d6ee6 = await _0x64d3a.json();
     return _0x3d6ee6;
@@ -510,7 +510,7 @@ tempmail.mails = async (_0xf78957, _0x22b96c) => {
   try {
     let _0x334113 = await fetch(_0x52bcfa);
     if (!_0x334113.ok) {
-      throw new Error("HTTP error! status: " + _0x334113.status);
+      throw new Error("HTTP erreur! status: " + _0x334113.status);
     }
     let _0x21e568 = await _0x334113.json();
     return _0x21e568;
