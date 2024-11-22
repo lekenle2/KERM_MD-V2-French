@@ -145,7 +145,7 @@ jobs:
 <br>
 
 * [`ARTHUR SASAKI`](https://github.com/Alp24ni)
-* ## Contact Dev of KERM🤪
+* ## LES DEV DE KERM🤪
 * [`RAYAN`](https://wa.me/237656520674?text=Salut+Bro+Rayan+Je+Suis+Un+Fan😍)
 * [`GIFFARENO`](https://wa.me/237650564445?text=Salut+Bro+Giffareno+Je+Suis+Un+Fan😍)
  </details>
